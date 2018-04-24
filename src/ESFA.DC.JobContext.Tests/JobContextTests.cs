@@ -14,7 +14,7 @@ namespace ESFA.DC.JobContext.Tests
         {
             DateTime dateTime = DateTime.UtcNow;
 
-            var taskItems = new List<ITaskItem>()
+            var taskItems = new List<ITaskItem>
             {
                 new TaskItem(
                     new List<string>
