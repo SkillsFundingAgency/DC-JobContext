@@ -5,6 +5,8 @@
         UkPrn,
         Container,
         Filename,
-        Username
+        Username,
+        ValidLearnRefNumbers,
+        InvalidLearnRefNumbers
     }
 }
