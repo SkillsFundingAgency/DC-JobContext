@@ -5,6 +5,7 @@
         UkPrn,
         Container,
         Filename,
+        FileSizeInBytes,
         Username,
         ValidLearnRefNumbers,
         InvalidLearnRefNumbers
