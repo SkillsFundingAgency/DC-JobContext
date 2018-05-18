@@ -4,7 +4,9 @@ namespace ESFA.DC.JobContext.Interface
 {
     public interface ITopicItem
     {
-        string TopicName { get; }
+        string SubscriptionName { get; }
+
+        string SubscriptionSqlFilterValue { get; }
 
         IReadOnlyList<ITaskItem> Tasks { get; }
     }
