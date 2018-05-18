@@ -28,7 +28,8 @@ namespace ESFA.DC.JobContext.Tests
             IReadOnlyList<ITopicItem> topics = new List<ITopicItem>
             {
                 new TopicItem(
-                    "Topic",
+                    "Subscription A",
+                    "SqlFilter A",
                     taskItems)
             };
 

@@ -22,7 +22,8 @@ namespace ESFA.DC.JobContext
             {
                 TopicItemDto topicItem = new TopicItemDto
                 {
-                    TopicName = topic.TopicName,
+                    SubscriptionName = topic.SubscriptionName,
+                    SubscriptionSqlFilterValue = topic.SubscriptionSqlFilterValue,
                     Tasks = new List<TaskItemDto>()
                 };
                 foreach (ITaskItem task in topic.Tasks)
@@ -51,11 +52,11 @@ namespace ESFA.DC.JobContext
                     taskItems.Add(new TaskItem(taskItemDto.Tasks.ToList(), taskItemDto.SupportsParallelExecution));
                 }
 
-                var topicItem = new TopicItem
-                {
-                    TopicName = topicItemDto.TopicName,
-                    Tasks = taskItems
-                };
+                var topicItem = new TopicItem(
+                    topicItemDto.SubscriptionName,
+                    topicItemDto.SubscriptionSqlFilterValue,
+                    taskItems);
+
                 topicItems.Add(topicItem);
             }
 

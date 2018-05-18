@@ -37,7 +37,7 @@ namespace ESFA.DC.JobContext.Tests
                                 SupportsParallelExecution = true
                             }
                         },
-                        TopicName = "Topic A"
+                        SubscriptionName = "Subscription A"
                     }
                 }
             };
@@ -57,6 +57,19 @@ namespace ESFA.DC.JobContext.Tests
         {
             DateTime now = DateTime.UtcNow;
 
+            List<ITaskItem> tasks = new List<ITaskItem>()
+            {
+                new TaskItem
+                {
+                    Tasks = new List<string>
+                    {
+                        "Task A"
+                    },
+                    SupportsParallelExecution = true
+                }
+            };
+            var topicItem = new TopicItem("Topic A", "SqlFilter A", tasks);
+
             JobContextMessage jobContextMessage = new JobContextMessage
             {
                 JobId = 12,
@@ -68,21 +81,7 @@ namespace ESFA.DC.JobContext.Tests
                 TopicPointer = 3,
                 Topics = new List<ITopicItem>
                 {
-                    new TopicItem
-                    {
-                        Tasks = new List<ITaskItem>
-                        {
-                            new TaskItem
-                            {
-                                Tasks = new List<string>
-                                {
-                                    "Task A"
-                                },
-                                SupportsParallelExecution = true
-                            }
-                        },
-                        TopicName = "Topic A"
-                    }
+                    topicItem
                 }
             };
 

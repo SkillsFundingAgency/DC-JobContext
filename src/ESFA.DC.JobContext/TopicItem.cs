@@ -5,17 +5,16 @@ namespace ESFA.DC.JobContext
 {
     public sealed class TopicItem : ITopicItem
     {
-        public TopicItem()
+        public TopicItem(string subscriptionName, string subscriptionSqlFilterValue, IReadOnlyList<ITaskItem> tasks)
         {
-        }
-
-        public TopicItem(string topicName, IReadOnlyList<ITaskItem> tasks)
-        {
-            TopicName = topicName;
+            SubscriptionName = subscriptionName;
+            SubscriptionSqlFilterValue = subscriptionSqlFilterValue;
             Tasks = tasks;
         }
 
-        public string TopicName { get; set; }
+        public string SubscriptionName { get; }
+
+        public string SubscriptionSqlFilterValue { get; }
 
         public IReadOnlyList<ITaskItem> Tasks { get; set; }
     }
