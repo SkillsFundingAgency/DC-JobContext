@@ -45,6 +45,16 @@
         /// <summary>
         /// The number of invalid learners. (long)
         /// </summary>
-        InvalidLearnRefNumbersCount
+        InvalidLearnRefNumbersCount,
+
+        /// <summary>
+        /// The total number of validation errors (int)
+        /// </summary>
+        ValidationTotalErrorCount,
+
+        /// <summary>
+        /// The total number of validation warnings (int)
+        /// </summary>
+        ValidationTotalWarningCount,
     }
 }
