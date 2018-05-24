@@ -28,7 +28,7 @@
         Username,
 
         /// <summary>
-        /// The *Key* of the serialised valid learn ref numbers in storage. (string)
+        /// The *Key* of the serialised and persisted valid learn ref numbers in storage. (string)
         /// </summary>
         ValidLearnRefNumbers,
 
@@ -56,5 +56,10 @@
         /// The total number of validation warnings (int)
         /// </summary>
         ValidationTotalWarningCount,
+
+        /// <summary>
+        /// The *Key* of the serialised and persisted funding ALB output. (string)
+        /// </summary>
+        FundingAlbOutput
     }
 }
