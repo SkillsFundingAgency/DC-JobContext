@@ -30,7 +30,7 @@
         /// <summary>
         /// The *Key* of the serialised and persisted valid learn ref numbers in storage. (string)
         /// </summary>
-        ValidLearnRefNumbers,
+        ValidLearnRefNumbers = 100,
 
         /// <summary>
         /// The number of valid learners. (long)
@@ -58,8 +58,13 @@
         ValidationTotalWarningCount,
 
         /// <summary>
+        /// The *Key* of the serialised and persisted validation errors. (string)
+        /// </summary>
+        ValidationErrors,
+
+        /// <summary>
         /// The *Key* of the serialised and persisted funding ALB output. (string)
         /// </summary>
-        FundingAlbOutput
+        FundingAlbOutput = 200
     }
 }
