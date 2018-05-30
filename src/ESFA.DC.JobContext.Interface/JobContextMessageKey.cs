@@ -63,6 +63,11 @@
         ValidationErrors,
 
         /// <summary>
+        /// The *Key* of the serialised and persisted validation error lookups. (string)
+        /// </summary>
+        ValidationErrorLookups,
+
+        /// <summary>
         /// The *Key* of the serialised and persisted funding ALB output. (string)
         /// </summary>
         FundingAlbOutput = 200
