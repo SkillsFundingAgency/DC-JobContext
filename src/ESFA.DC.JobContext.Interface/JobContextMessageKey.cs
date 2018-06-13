@@ -28,6 +28,11 @@
         Username,
 
         /// <summary>
+        /// The List of String of exception names that occurred during the message processing. Will be inspected if a callback fails to execute n times and the message is dead lettered. (List of String)
+        /// </summary>
+        CallbackExceptions,
+
+        /// <summary>
         /// The *Key* of the serialised and persisted valid learn ref numbers in storage. (string)
         /// </summary>
         ValidLearnRefNumbers = 100,
