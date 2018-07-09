@@ -70,6 +70,11 @@
         /// <summary>
         /// The *Key* of the serialised and persisted funding ALB output. (string)
         /// </summary>
-        FundingAlbOutput = 200
+        FundingAlbOutput = 200,
+
+        /// <summary>
+        /// Key to determine if the job will be finished (marked as completed) or go to Awaitng Action status
+        /// </summary>
+        PauseWhenFinished
     }
 }
