@@ -73,8 +73,13 @@
         FundingAlbOutput = 200,
 
         /// <summary>
+        /// The *Key* of the serialised and persisted funding FM35 output. (string)
+        /// </summary>
+        FundingFm35Output = 201,
+
+        /// <summary>
         /// Key to determine if the job will be finished (marked as completed) or go to Awaitng Action status
         /// </summary>
-        PauseWhenFinished
+        PauseWhenFinished = 300
     }
 }
