@@ -18,6 +18,6 @@ namespace ESFA.DC.JobContext
 
         public int TopicPointer { get; set; }
 
-        public Dictionary<JobContextMessageKey, object> KeyValuePairs { get; set; }
+        public Dictionary<string, object> KeyValuePairs { get; set; }
     }
 }
