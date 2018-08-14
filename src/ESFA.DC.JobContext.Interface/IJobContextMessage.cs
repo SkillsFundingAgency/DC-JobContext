@@ -13,6 +13,6 @@ namespace ESFA.DC.JobContext.Interface
 
         int TopicPointer { get; }
 
-        IDictionary<JobContextMessageKey, object> KeyValuePairs { get; }
+        IDictionary<string, object> KeyValuePairs { get; }
     }
 }
