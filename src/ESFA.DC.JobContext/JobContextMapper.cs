@@ -12,7 +12,7 @@ namespace ESFA.DC.JobContext
             JobContextDto jobContextDto = new JobContextDto
             {
                 JobId = value.JobId,
-                KeyValuePairs = new Dictionary<JobContextMessageKey, object>(value.KeyValuePairs),
+                KeyValuePairs = new Dictionary<string, object>(value.KeyValuePairs),
                 SubmissionDateTimeUtc = value.SubmissionDateTimeUtc,
                 TopicPointer = value.TopicPointer,
                 Topics = new List<TopicItemDto>()

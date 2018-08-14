@@ -19,7 +19,7 @@ namespace ESFA.DC.JobContext
             SubmissionDateTimeUtc = submissionDateTime ?? DateTime.UtcNow;
             Topics = topics;
             TopicPointer = topicPointer;
-            KeyValuePairs = new Dictionary<JobContextMessageKey, object>();
+            KeyValuePairs = new Dictionary<string, object>();
         }
 
         public JobContextMessage(
@@ -47,6 +47,6 @@ namespace ESFA.DC.JobContext
 
         public int TopicPointer { get; set; }
 
-        public IDictionary<JobContextMessageKey, object> KeyValuePairs { get; set; }
+        public IDictionary<string, object> KeyValuePairs { get; set; }
     }
 }
