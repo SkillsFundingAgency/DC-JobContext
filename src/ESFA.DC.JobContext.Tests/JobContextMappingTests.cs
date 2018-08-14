@@ -17,7 +17,7 @@ namespace ESFA.DC.JobContext.Tests
             {
                 SubmissionDateTimeUtc = now,
                 JobId = 12,
-                KeyValuePairs = new Dictionary<JobContextMessageKey, object>
+                KeyValuePairs = new Dictionary<string, object>
                 {
                     { JobContextMessageKey.UkPrn, 12345 }
                 },
@@ -73,7 +73,7 @@ namespace ESFA.DC.JobContext.Tests
             JobContextMessage jobContextMessage = new JobContextMessage
             {
                 JobId = 12,
-                KeyValuePairs = new Dictionary<JobContextMessageKey, object>
+                KeyValuePairs = new Dictionary<string, object>
                 {
                     { JobContextMessageKey.UkPrn, 12345 }
                 },
