@@ -78,6 +78,11 @@
         FundingFm35Output = 201,
 
         /// <summary>
+        /// The *Key* of the serialised and persisted funding FM25 output. (string)
+        /// </summary>
+        FundingFm25Output = 202,
+
+        /// <summary>
         /// Key to determine if the job will be finished (marked as completed) or go to Awaitng Action status
         /// </summary>
         PauseWhenFinished = 300
