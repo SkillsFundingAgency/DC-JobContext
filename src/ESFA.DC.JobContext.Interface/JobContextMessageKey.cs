@@ -75,7 +75,7 @@
          /// <summary>
         /// The *Key* of the serialised and persisted funding FM36 output. (string)
         /// </summary>
-        public const string FundingFm35Output = "FundingFm36Output";
+        public const string FundingFm36Output = "FundingFm36Output";
 
         /// <summary>
         /// The *Key* of the serialised and persisted funding FM35 output. (string)
@@ -95,6 +95,6 @@
         /// <summary>
         /// Flag to determine if the job has been cross loaded, marking the job exempt from finished status. (string)
         /// </summary>
-        public const string PauseWhenFinished = "JobIsCrossLoaded";
+        public const string JobIsCrossLoaded = "JobIsCrossLoaded";
     }
 }
