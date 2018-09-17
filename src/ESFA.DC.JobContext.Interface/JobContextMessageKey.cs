@@ -72,6 +72,11 @@
         /// </summary>
         public const string FundingAlbOutput = "FundingAlbOutput";
 
+         /// <summary>
+        /// The *Key* of the serialised and persisted funding FM36 output. (string)
+        /// </summary>
+        public const string FundingFm35Output = "FundingFm36Output";
+
         /// <summary>
         /// The *Key* of the serialised and persisted funding FM35 output. (string)
         /// </summary>
@@ -86,5 +91,10 @@
         /// Flag to determine if the job will be finished (marked as completed) or go to Awaiting Action status (bool)
         /// </summary>
         public const string PauseWhenFinished = "PauseWhenFinished";
+
+        /// <summary>
+        /// Flag to determine if the job has been cross loaded, marking the job exempt from finished status. (string)
+        /// </summary>
+        public const string PauseWhenFinished = "JobIsCrossLoaded";
     }
 }
